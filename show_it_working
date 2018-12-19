@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require 'vendor/autoload.php';
+use Puzzle\Game;
+
+$game = new Game(range(1,100));
+$result = $game->play();
+
+foreach ($result as $value)
+{
+    echo $value . "\n";
+}
